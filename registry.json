@@ -1,0 +1,606 @@
+{
+  "modules": [
+    {
+      "name": "activation_patching",
+      "version": "0.1.0",
+      "description": "Activation patching (causal tracing): cache hidden states from a source run and patch them into a target run at the same layer",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "activation_patching",
+      "size_bytes": 15584,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "activation_trajectory",
+      "version": "0.1.0",
+      "description": "Track residual-stream movement through depth: per-layer cosine similarity to the previous layer and hidden-state L2 norm",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "activation_trajectory",
+      "size_bytes": 10192,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "attention_entropy_profiler",
+      "version": "0.1.0",
+      "description": "Per-head attention entropy (normalized by log(seq_len)) profiled across attention layers: scalar, head table, and depth chart",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "attention_entropy_profiler",
+      "size_bytes": 13156,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "attention_head_grid",
+      "version": "0.1.0",
+      "description": "Grid of per-head attention heatmaps for a layer - see head specialization (diagonal / previous-token / sink / induction) at a glance",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "attention_head_grid",
+      "size_bytes": 8987,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "attention_rollout",
+      "version": "0.1.0",
+      "description": "Attention rollout (Abnar & Zuidema 2020): cumulative token-to-token influence matrices across attention layers",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "attention_rollout",
+      "size_bytes": 17260,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "attn_visualizer",
+      "version": "0.0.1",
+      "description": "Attention visualization with heatmaps, head analysis, pattern detection, and similarity matrices",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after",
+        "layer_before"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "attn_visualizer",
+      "size_bytes": 36110,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "contrastive_logit_difference",
+      "version": "0.1.0",
+      "description": "Track the logit difference between two candidate tokens through decoder depth",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "contrastive_logit_difference",
+      "size_bytes": 10074,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "direct_logit_attribution",
+      "version": "0.1.0",
+      "description": "Direct logit attribution: per-decoder-block residual update contribution to the current top-1 token's logit",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "direct_logit_attribution",
+      "size_bytes": 14125,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "embedding_projector",
+      "version": "0.1.0",
+      "description": "Project per-token hidden states of a chosen layer to 2D (PCA / t-SNE) and plot the token cloud",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "embedding_projector",
+      "size_bytes": 14863,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "gradient_importance",
+      "version": "3.0.0",
+      "description": "Target-score gradients and activation \u00d7 gradient attribution with an explicit backward pass",
+      "author": "LTTS Team",
+      "event_types": [
+        "layer_after",
+        "layer_before"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [
+        "gradients",
+        "importance",
+        "attribution",
+        "interpretability",
+        "captum"
+      ],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "gradient_importance",
+      "size_bytes": 114294,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "induction_head_detector",
+      "version": "0.1.0",
+      "description": "Score every attention head for induction behavior (attends to the token after a previous occurrence of the current token)",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "induction_head_detector",
+      "size_bytes": 16719,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "layer_inspector",
+      "version": "1.0.0",
+      "description": "Comprehensive layer analysis and information extraction module",
+      "author": "LTTS Team",
+      "event_types": [
+        "layer_after",
+        "layer_before"
+      ],
+      "dependencies": [],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "layer_inspector",
+      "size_bytes": 45008,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "layer_redundancy",
+      "version": "0.1.0",
+      "description": "Layer-redundancy map: per-block Block Influence (1 - cosine between block input and output) and relative norm change",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "layer_redundancy",
+      "size_bytes": 9743,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "layer_statistics",
+      "version": "1.0.0",
+      "description": "Comprehensive layer-wise statistics collection and monitoring",
+      "author": "LTTS Team",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "torch",
+        "numpy"
+      ],
+      "tags": [
+        "statistics",
+        "monitoring",
+        "analysis",
+        "performance"
+      ],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "layer_statistics",
+      "size_bytes": 32413,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "logit_lens",
+      "version": "0.1.0",
+      "description": "Decode each layer's hidden state through the unembedding (logit lens): top-k token predictions per layer",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "logit_lens",
+      "size_bytes": 12858,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "logit_lens_grid",
+      "version": "0.1.0",
+      "description": "Layers x positions logit-lens grid - the top-1 predicted token at each position decoded from every layer, coloured by confidence",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "logit_lens_grid",
+      "size_bytes": 10272,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "massive_activations",
+      "version": "0.1.0",
+      "description": "Isolate outlier residual-stream activations (massive activations / super weights) and the attention sinks they create",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "massive_activations",
+      "size_bytes": 14848,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "memory_monitor",
+      "version": "0.2.0",
+      "description": "Real-time memory monitoring with GPU and CPU tracking",
+      "author": "LTTS Team",
+      "event_types": [
+        "model_before",
+        "model_after"
+      ],
+      "dependencies": [
+        "psutil",
+        "matplotlib"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "memory_monitor",
+      "size_bytes": 13221,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "model_control_vector",
+      "version": "2.1.0",
+      "description": "Unified control vector module with training interface, visualization, and repeng integration",
+      "author": "LTTS Team",
+      "event_types": [
+        "model_after",
+        "model_before",
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [
+        "control_vector",
+        "training",
+        "model_level",
+        "repeng",
+        "visualization"
+      ],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "model_control_vector",
+      "size_bytes": 25067,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:35"
+    },
+    {
+      "name": "model_introspector",
+      "version": "1.0.0",
+      "description": "Extracts comprehensive model state and architecture information",
+      "author": "LTTS Team",
+      "event_types": [
+        "model_after"
+      ],
+      "dependencies": [
+        "torch"
+      ],
+      "tags": [
+        "introspection",
+        "model-analysis",
+        "architecture",
+        "metadata"
+      ],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "model_introspector",
+      "size_bytes": 14657,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "neuron_ablation",
+      "version": "0.1.0",
+      "description": "Ablate chosen hidden-state channels (zero or mean replacement) at attached layers \u2014 causal knockout intervention",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "neuron_ablation",
+      "size_bytes": 12639,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "neuron_activation_map",
+      "version": "0.1.0",
+      "description": "Token x neuron activation heatmap for a layer - see which neurons fire on which tokens and how sparse the representation is",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "neuron_activation_map",
+      "size_bytes": 7354,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "neuron_tracker",
+      "version": "1.0.0",
+      "description": "Track and analyze neuron activation patterns across layers",
+      "author": "LTTS Team",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "torch",
+        "numpy"
+      ],
+      "tags": [
+        "neurons",
+        "activations",
+        "analysis",
+        "interpretability"
+      ],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "neuron_tracker",
+      "size_bytes": 16088,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "next_token_predictions",
+      "version": "0.1.0",
+      "description": "Top-k next-token distribution at the attached layer - entropy scalar + token table + probability bar chart",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "next_token_predictions",
+      "size_bytes": 9034,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "occlusion_attribution",
+      "version": "0.1.0",
+      "description": "Perturbation-based token attribution: occlude each input token and measure the drop in the baseline top-1 prediction probability",
+      "author": "LTTS",
+      "event_types": [
+        "model_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "occlusion_attribution",
+      "size_bytes": 15982,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "representation_similarity",
+      "version": "0.1.0",
+      "description": "Layer-by-layer representation similarity (linear CKA) across the forward pass, rendered as a heatmap",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "representation_similarity",
+      "size_bytes": 11656,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "residual_stream_norm",
+      "version": "0.1.0",
+      "description": "Track L2, RMS, maximum magnitude, and norm growth through decoder depth",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "residual_stream_norm",
+      "size_bytes": 7244,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "sae_features",
+      "version": "0.1.0",
+      "description": "Sparse autoencoder feature inspection: top active SAE features in the residual stream at decoder-block boundaries (sae_lens)",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "sae_features",
+      "size_bytes": 15196,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "sample_module",
+      "version": "0.3.1",
+      "description": "Minimal scalar emitter for LTTS debugging",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after",
+        "layer_before"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "sample_module",
+      "size_bytes": 15164,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "token_contributor",
+      "version": "2.0.0",
+      "description": "Analyze token contributions using ablation/occlusion methods",
+      "author": "LTTS Team",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [
+        "tokens",
+        "ablation",
+        "occlusion",
+        "interpretability"
+      ],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "token_contributor",
+      "size_bytes": 28815,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    },
+    {
+      "name": "token_embedding_audit",
+      "version": "0.1.0",
+      "description": "Flag under-trained 'glitch' tokens from input-embedding norm and closeness to the mean embedding",
+      "author": "LTTS",
+      "event_types": [
+        "model_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [
+        "tokenizer",
+        "embeddings",
+        "glitch-tokens"
+      ],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "token_embedding_audit",
+      "size_bytes": 12873,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-20T18:59:36"
+    }
+  ]
+}

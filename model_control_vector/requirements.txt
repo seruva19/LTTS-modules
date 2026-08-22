@@ -1,0 +1,3 @@
+torch
+transformers
+repeng==0.4.0
