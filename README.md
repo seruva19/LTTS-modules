@@ -30,6 +30,7 @@ LTTS shows registry, installation, and update counts in the status bar.
 
 | module | version | what it does |
 |---|---|---|
+| activation_anisotropy | 0.1.0 | Measure residual-stream isotropy, mean-direction bias, and dominant variance across layers |
 | activation_patching | 0.1.0 | Activation patching (causal tracing): cache hidden states from a source run and patch them into a target run |
 | activation_trajectory | 0.1.0 | Track residual-stream movement through depth: per-layer cosine similarity to the previous layer |
 | attention_entropy_profiler | 0.1.0 | Per-head attention entropy (normalized by log(seq_len)) profiled across attention layers |
@@ -50,6 +51,7 @@ LTTS shows registry, installation, and update counts in the status bar.
 | model_introspector | 1.0.0 | Report model structure and parameter state |
 | neuron_ablation | 0.1.0 | Ablate chosen hidden-state channels (zero/mean) — causal knockout experiments |
 | neuron_activation_map | 0.1.0 | Token × neuron activation heatmap for a layer |
+| neuron_activation_steering | 0.1.0 | Add, multiply, set, or clamp selected activation channels during inference |
 | neuron_tracker | 1.0.0 | Track and analyze neuron activation patterns across layers |
 | next_token_predictions | 0.1.0 | Top-k next-token distribution at the attached layer |
 | occlusion_attribution | 0.1.0 | Perturbation-based token attribution: occlude each token, measure the top-1 logit drop |

@@ -1,6 +1,24 @@
 {
   "modules": [
     {
+      "name": "activation_anisotropy",
+      "version": "0.1.0",
+      "description": "Measure residual-stream anisotropy, isotropy, and dominant directions across layers",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "activation_anisotropy",
+      "size_bytes": 8251,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-23T21:58:06"
+    },
+    {
       "name": "activation_patching",
       "version": "0.1.0",
       "description": "Activation patching (causal tracing): cache hidden states from a source run and patch them into a target run at the same layer",
@@ -14,9 +32,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "activation_patching",
-      "size_bytes": 15584,
+      "size_bytes": 15585,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "activation_trajectory",
@@ -32,9 +50,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "activation_trajectory",
-      "size_bytes": 10192,
+      "size_bytes": 10193,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "attention_entropy_profiler",
@@ -52,7 +70,7 @@
       "module_path": "attention_entropy_profiler",
       "size_bytes": 13156,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "attention_head_grid",
@@ -70,7 +88,7 @@
       "module_path": "attention_head_grid",
       "size_bytes": 8987,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "attention_rollout",
@@ -86,9 +104,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "attention_rollout",
-      "size_bytes": 17260,
+      "size_bytes": 17262,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "attn_visualizer",
@@ -105,9 +123,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "attn_visualizer",
-      "size_bytes": 36110,
+      "size_bytes": 36252,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "contrastive_logit_difference",
@@ -125,7 +143,7 @@
       "module_path": "contrastive_logit_difference",
       "size_bytes": 10074,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "direct_logit_attribution",
@@ -143,7 +161,7 @@
       "module_path": "direct_logit_attribution",
       "size_bytes": 14125,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "embedding_projector",
@@ -159,9 +177,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "embedding_projector",
-      "size_bytes": 14863,
+      "size_bytes": 16026,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "gradient_importance",
@@ -184,9 +202,9 @@
       ],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "gradient_importance",
-      "size_bytes": 114294,
+      "size_bytes": 89045,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "induction_head_detector",
@@ -202,9 +220,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "induction_head_detector",
-      "size_bytes": 16719,
+      "size_bytes": 16721,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "layer_inspector",
@@ -219,9 +237,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "layer_inspector",
-      "size_bytes": 45008,
+      "size_bytes": 43695,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "layer_redundancy",
@@ -237,9 +255,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "layer_redundancy",
-      "size_bytes": 9743,
+      "size_bytes": 9744,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "layer_statistics",
@@ -261,9 +279,9 @@
       ],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "layer_statistics",
-      "size_bytes": 32413,
+      "size_bytes": 32313,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "logit_lens",
@@ -281,7 +299,7 @@
       "module_path": "logit_lens",
       "size_bytes": 12858,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "logit_lens_grid",
@@ -299,7 +317,7 @@
       "module_path": "logit_lens_grid",
       "size_bytes": 10272,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "massive_activations",
@@ -317,7 +335,7 @@
       "module_path": "massive_activations",
       "size_bytes": 14848,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "memory_monitor",
@@ -335,9 +353,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "memory_monitor",
-      "size_bytes": 13221,
+      "size_bytes": 13222,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "model_control_vector",
@@ -361,9 +379,9 @@
       ],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "model_control_vector",
-      "size_bytes": 25067,
+      "size_bytes": 25771,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:35"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "model_introspector",
@@ -384,9 +402,9 @@
       ],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "model_introspector",
-      "size_bytes": 14657,
+      "size_bytes": 14658,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "neuron_ablation",
@@ -404,7 +422,7 @@
       "module_path": "neuron_ablation",
       "size_bytes": 12639,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "neuron_activation_map",
@@ -420,9 +438,27 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "neuron_activation_map",
-      "size_bytes": 7354,
+      "size_bytes": 7355,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
+    },
+    {
+      "name": "neuron_activation_steering",
+      "version": "0.1.0",
+      "description": "Add, scale, set, or clamp selected activation channels during inference",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "neuron_activation_steering",
+      "size_bytes": 9420,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "neuron_tracker",
@@ -444,9 +480,9 @@
       ],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "neuron_tracker",
-      "size_bytes": 16088,
+      "size_bytes": 16089,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "next_token_predictions",
@@ -462,9 +498,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "next_token_predictions",
-      "size_bytes": 9034,
+      "size_bytes": 9035,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "occlusion_attribution",
@@ -480,9 +516,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "occlusion_attribution",
-      "size_bytes": 15982,
+      "size_bytes": 16653,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "representation_similarity",
@@ -498,9 +534,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "representation_similarity",
-      "size_bytes": 11656,
+      "size_bytes": 11657,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "residual_stream_norm",
@@ -516,9 +552,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "residual_stream_norm",
-      "size_bytes": 7244,
+      "size_bytes": 7245,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "sae_features",
@@ -534,9 +570,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "sae_features",
-      "size_bytes": 15196,
+      "size_bytes": 15199,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "sample_module",
@@ -553,9 +589,9 @@
       "tags": [],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "sample_module",
-      "size_bytes": 15164,
+      "size_bytes": 15110,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "token_contributor",
@@ -576,9 +612,9 @@
       ],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "token_contributor",
-      "size_bytes": 28815,
+      "size_bytes": 29537,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     },
     {
       "name": "token_embedding_audit",
@@ -598,9 +634,9 @@
       ],
       "repository_url": "https://github.com/seruva19/LTTS-modules",
       "module_path": "token_embedding_audit",
-      "size_bytes": 12873,
+      "size_bytes": 12874,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-08-20T18:59:36"
+      "updated_at": "2026-08-23T21:58:06"
     }
   ]
 }
