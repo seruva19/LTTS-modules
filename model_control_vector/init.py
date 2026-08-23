@@ -17,6 +17,10 @@ from datetime import datetime
 from typing import Dict, Any, List, Optional, Tuple, TYPE_CHECKING
 import logging
 
+# repeng 0.4 still references the NumPy 1.x alias removed in NumPy 2.
+if not hasattr(np, "float_"):
+    np.float_ = np.float64
+
 # Try to import repeng components
 try:
     sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", "repeng"))
