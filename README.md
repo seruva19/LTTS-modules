@@ -76,3 +76,17 @@ executes third-party code and is disabled by default; start LTTS with
    ```
 
 3. Commit both the module and the updated `registry.json`.
+
+## Headless validation
+
+With LTTS cloned next to this repository, validate every module without
+starting FastAPI or a browser:
+
+```bash
+python tools/headless_validate.py
+```
+
+The validator discovers every `*/init.py`, checks metadata and registry
+consistency, then imports and invokes each module in its own process with a
+synthetic event. A timeout or failure in one module cannot hide failures in
+another. Pass module directory names to test only those modules.
