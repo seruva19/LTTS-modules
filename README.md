@@ -59,6 +59,7 @@ LTTS shows registry, installation, and update counts in the status bar.
 | residual_stream_norm | 0.1.0 | Track L2/RMS norms and norm growth through decoder depth |
 | sae_features | 0.1.0 | Sparse autoencoder feature inspection in the residual stream (needs `sae_lens`) |
 | sample_module | 0.3.1 | Minimal scalar emitter — reference example for module authors |
+| state_tracking_diagnostics | 0.1.0 | Find tokens whose residual representations keep changing late in model depth |
 | token_contributor | 2.0.0 | Analyze token contributions using ablation/occlusion methods |
 
 ## Installing a module from the LTTS UI
