@@ -26,7 +26,7 @@ METADATA = {
     "event_types": ["layer_after"],
     "dependencies": ["requirements.txt"],
     "requires": ["attention_weights"],
-    "target_roles": ["attention"],
+    "target_roles": ["self_attention"],
     "methods": {
         "ctor": "initialize_module",
         "dtor": "cleanup_module",
