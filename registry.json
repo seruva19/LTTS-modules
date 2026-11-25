@@ -16,7 +16,7 @@
       "module_path": "activation_anisotropy",
       "size_bytes": 8253,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "activation_patching",
@@ -34,7 +34,7 @@
       "module_path": "activation_patching",
       "size_bytes": 15585,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "activation_trajectory",
@@ -52,7 +52,7 @@
       "module_path": "activation_trajectory",
       "size_bytes": 10193,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "attention_entropy_profiler",
@@ -70,7 +70,7 @@
       "module_path": "attention_entropy_profiler",
       "size_bytes": 13156,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "attention_head_grid",
@@ -88,7 +88,7 @@
       "module_path": "attention_head_grid",
       "size_bytes": 8987,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "attention_rollout",
@@ -106,7 +106,7 @@
       "module_path": "attention_rollout",
       "size_bytes": 17262,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "attention_sink_profiler",
@@ -124,7 +124,7 @@
       "module_path": "attention_sink_profiler",
       "size_bytes": 14374,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "attn_visualizer",
@@ -143,7 +143,7 @@
       "module_path": "attn_visualizer",
       "size_bytes": 36252,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "contrastive_logit_difference",
@@ -161,7 +161,7 @@
       "module_path": "contrastive_logit_difference",
       "size_bytes": 10074,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "direct_logit_attribution",
@@ -179,7 +179,7 @@
       "module_path": "direct_logit_attribution",
       "size_bytes": 14125,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "embedding_projector",
@@ -197,7 +197,7 @@
       "module_path": "embedding_projector",
       "size_bytes": 16026,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "gradient_importance",
@@ -222,7 +222,7 @@
       "module_path": "gradient_importance",
       "size_bytes": 89045,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "induction_head_detector",
@@ -240,7 +240,25 @@
       "module_path": "induction_head_detector",
       "size_bytes": 16721,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
+    },
+    {
+      "name": "intrinsic_dimensionality",
+      "version": "0.1.0",
+      "description": "Measure layer intrinsic dimensionality via Participation Ratio, Effective Rank, and PCA variance threshold",
+      "author": "LTTS",
+      "event_types": [
+        "layer_after"
+      ],
+      "dependencies": [
+        "requirements.txt"
+      ],
+      "tags": [],
+      "repository_url": "https://github.com/seruva19/LTTS-modules",
+      "module_path": "intrinsic_dimensionality",
+      "size_bytes": 10423,
+      "created_at": "2026-01-01T00:00:00",
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "layer_inspector",
@@ -257,7 +275,7 @@
       "module_path": "layer_inspector",
       "size_bytes": 43695,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "layer_redundancy",
@@ -275,7 +293,7 @@
       "module_path": "layer_redundancy",
       "size_bytes": 9744,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "layer_statistics",
@@ -299,7 +317,7 @@
       "module_path": "layer_statistics",
       "size_bytes": 32313,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "logit_lens",
@@ -317,7 +335,7 @@
       "module_path": "logit_lens",
       "size_bytes": 12858,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "logit_lens_grid",
@@ -335,7 +353,7 @@
       "module_path": "logit_lens_grid",
       "size_bytes": 10272,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "lookback_lens",
@@ -353,7 +371,7 @@
       "module_path": "lookback_lens",
       "size_bytes": 14262,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "massive_activations",
@@ -371,7 +389,7 @@
       "module_path": "massive_activations",
       "size_bytes": 14848,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "memory_monitor",
@@ -391,7 +409,7 @@
       "module_path": "memory_monitor",
       "size_bytes": 13222,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "model_control_vector",
@@ -417,7 +435,7 @@
       "module_path": "model_control_vector",
       "size_bytes": 25771,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "model_introspector",
@@ -440,7 +458,7 @@
       "module_path": "model_introspector",
       "size_bytes": 14658,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "neuron_ablation",
@@ -458,7 +476,7 @@
       "module_path": "neuron_ablation",
       "size_bytes": 12639,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "neuron_activation_map",
@@ -476,7 +494,7 @@
       "module_path": "neuron_activation_map",
       "size_bytes": 7355,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "neuron_activation_steering",
@@ -494,7 +512,7 @@
       "module_path": "neuron_activation_steering",
       "size_bytes": 9436,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "neuron_tracker",
@@ -518,7 +536,7 @@
       "module_path": "neuron_tracker",
       "size_bytes": 16089,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "next_token_predictions",
@@ -536,7 +554,7 @@
       "module_path": "next_token_predictions",
       "size_bytes": 9035,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "occlusion_attribution",
@@ -554,7 +572,7 @@
       "module_path": "occlusion_attribution",
       "size_bytes": 16653,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "representation_similarity",
@@ -572,7 +590,7 @@
       "module_path": "representation_similarity",
       "size_bytes": 11657,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "residual_stream_norm",
@@ -590,7 +608,7 @@
       "module_path": "residual_stream_norm",
       "size_bytes": 7245,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "sae_features",
@@ -608,7 +626,7 @@
       "module_path": "sae_features",
       "size_bytes": 15199,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "sample_module",
@@ -627,7 +645,7 @@
       "module_path": "sample_module",
       "size_bytes": 15110,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "state_tracking_diagnostics",
@@ -645,7 +663,7 @@
       "module_path": "state_tracking_diagnostics",
       "size_bytes": 11365,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "token_contributor",
@@ -668,7 +686,7 @@
       "module_path": "token_contributor",
       "size_bytes": 29537,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     },
     {
       "name": "token_embedding_audit",
@@ -690,7 +708,7 @@
       "module_path": "token_embedding_audit",
       "size_bytes": 12874,
       "created_at": "2026-01-01T00:00:00",
-      "updated_at": "2026-11-25T15:16:05"
+      "updated_at": "2026-11-25T15:16:57"
     }
   ]
 }
